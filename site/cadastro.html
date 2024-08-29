@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <!-- CSS EXTERNA -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="/pagina cadastro cliente" method="post">
+        <fieldset>
+            <legend>Identificação</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" minlength="3" maxlength="20" id="nome" required />
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" minlength="5" maxlength="30" id="sobrenome" required />
+
+            <label for="data_nascimento">Data de Nascimento</label>
+            <input type="date" id="data_nascimento" required />
+
+            <label for="senha">Senha:</label>
+            <input type="password" minlength="5" maxlength="13" id="senha" required />
+
+            <label for="data_cadastro"></label>
+            <input type="datetime-local" id="data_cadastro" hidden/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required/>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" minlength="10" maxlength="14" id="telefone" required/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="tipo_endereco">Tipo:</label>
+            <select id="tipo_endereco">
+                <option value="">Selecione:</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <label for="bairro_endereco">Bairro:</label>
+            <input type="text" id="bairro_endereco" required/>
+
+            <label for="rua_endereco">Rua:</label>
+            <input type="text" id="rua_endereco" required />
+
+            <label for="numero_endereco">Número:</label>
+            <input type="text" id="numero_endereco" required/>
+
+            <label for="complemento_endereco">Complemento:</label>
+            <input type="text" id="complemento_endereco" />
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar Cadastro</button>
+        </fieldset>
+    </form>
+</body>
+</html>
