@@ -127,3 +127,23 @@ body {
 .prev-btn:hover {
     background-color: #aaaaaa;
 }
+
+h1 {
+    background-color: #ff0000;
+    color: #f1efef;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+figure {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: end;
+    text-emphasis-color: white;
+}
